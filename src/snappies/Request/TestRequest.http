@@ -1,11 +1,15 @@
 # Créer un utilisateur avec la méthode POST
-POST http://localhost:8000/test/test/create
+POST http://localhost:8000/commande/create_commande
 Content-Type: application/json
 
 {
-  "value": "12",
- 
+  "id":"5",  
+  "value": "test3"
 }
 
 ###
-GET http://localhost:8000/test/test/read-all
+GET http://localhost:8000/commande/getAll
+
+
+###
+GET http://localhost:8000/commande/getOne/1
