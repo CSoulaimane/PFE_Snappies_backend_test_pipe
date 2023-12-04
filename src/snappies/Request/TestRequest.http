@@ -1,0 +1,11 @@
+# Créer un utilisateur avec la méthode POST
+POST http://localhost:8000/user/create
+Content-Type: application/json
+
+{
+  "value": "12",
+ 
+}
+
+###
+GET http://localhost:8000/users/user/read-all
