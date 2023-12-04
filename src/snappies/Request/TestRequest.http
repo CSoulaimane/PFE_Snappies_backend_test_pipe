@@ -4,7 +4,7 @@ Content-Type: application/json
 
 {
   "id":"5",  
-  "value": "test3"
+  "value": "test4"
 }
 
 ###
@@ -12,4 +12,7 @@ GET http://localhost:8000/commande/getAll
 
 
 ###
-GET http://localhost:8000/commande/getOne/1
+GET http://localhost:8000/commande/getOne/5
+
+###
+GET http://localhost:8000/commande/helloWorld

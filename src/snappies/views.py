@@ -33,3 +33,7 @@ def create_commande(request):
         return HttpResponse(json.dumps(commandes_data))
     else:
         return HttpResponse('error')
+    
+def display_hello_world(request):
+    message = { 'message': 'Hello World!' }
+    return HttpResponse(json.dumps(message))
