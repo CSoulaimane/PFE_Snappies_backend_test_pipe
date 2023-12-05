@@ -3,8 +3,8 @@ POST http://localhost:8000/commande/create_commande
 Content-Type: application/json
 
 {
-  "id":"5",  
-  "value": "test3"
+  "id":"6",  
+  "value": "souli"
 }
 
 ###

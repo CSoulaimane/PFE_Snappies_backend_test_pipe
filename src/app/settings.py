@@ -13,7 +13,11 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 
 import django
+import environ
 
+
+env = environ.Env()
+environ.Env.read_env()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -59,11 +63,11 @@ ROOT_URLCONF = 'app.urls'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mcyjmgyl',
-        'USER': 'mcyjmgyl',
-        'PASSWORD': 'sAET7RcHjBLIisrN_v2Eq5uORbw5sWoV',
-        'HOST': 'lucky.db.elephantsql.com',
-        'PORT': '5432',  # Ou le port fourni par ElephantSQL
+        'NAME': env("DB_NAME"),
+        'USER': env("DB_USER"),
+        'PASSWORD': env("DB_PASSWORD"),
+        'HOST': env("DB_HOST"),
+        'PORT': env("DB_PORT"),
     }
 }
 
