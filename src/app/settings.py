@@ -14,6 +14,7 @@ from pathlib import Path
 
 import django
 import environ
+import re
 
 
 env = environ.Env()
@@ -31,7 +32,7 @@ SECRET_KEY = 'django-insecure-3o8(y-ct^%jmk890lnr6=w7=pkvs5!4-o-d3at326)=kx1g%%4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -60,6 +61,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'app.urls'
+# Exemple d'utilisation avec votre chaîne de connexion
 
 
 DATABASES = {

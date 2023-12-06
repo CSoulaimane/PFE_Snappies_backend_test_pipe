@@ -11,3 +11,4 @@ install django :
 
 --> pip install -r requirements.txt. pour installer toutes les dépendances du fichier requirements
 
+python manage.py runserver
