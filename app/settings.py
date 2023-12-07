@@ -67,11 +67,11 @@ ROOT_URLCONF = 'app.urls'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env("mcyjmgyl"),
-        'USER': env("mcyjmgyl"),
-        'PASSWORD': env("sAET7RcHjBLIisrN_v2Eq5uORbw5sWoV"),
-        'HOST': env("lucky.db.elephantsql.com"),
-        'PORT': env("5432"),
+        'NAME': "mcyjmgyl",
+        'USER': "mcyjmgyl",
+        'PASSWORD': "sAET7RcHjBLIisrN_v2Eq5uORbw5sWoV",
+        'HOST': "lucky.db.elephantsql.com",
+        'PORT': "5432",
     }
 }
 
